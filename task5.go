@@ -22,7 +22,7 @@ func main() {
 		quit <- 0
 	}()
 
-	for i := 0; i < 20; i++ {
+	for {
 		select {
 		case num := <-ch1:
 			fmt.Printf("Received an odd number: %d\n", num)
