@@ -13,7 +13,7 @@ func main() {
 		defer close(ch1)
 		defer close(ch2)
 		for i := 1; i <= 20; i++ {
-			if i%2 == 0 {
+			if i%2 == 1 {
 				ch1 <- i
 			} else {
 				ch2 <- i
